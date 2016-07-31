@@ -11,6 +11,14 @@
 <body>
 
 	<div class="container">
+				<nav>
+			<ul>
+				<li><a href="index3.html">Home</a></li>
+				<li><a href="index2.html">Index2</a></li>
+				<li><a href="index.html">Index</a></li>
+				<li><a href="testPage.html">Test Page</a></li>
+			</ul>
+		</nav>
 		<div id="mybutton" class="btn btn-primary">click here for javascript</div>
 		<div id="mybutton2" class="btn btn-warning">click here for jquery</div>
 		<div class="row">
@@ -40,34 +48,11 @@
 		<img class="clickPic" src="http://lorempixel.com/400/200" />
 	</div>
 
+
 	<script src="js/vendor/jquery-1.11.2.min.js"></script>
-	<script>
-		$(document).ready(function() {
+        <script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 
-			//var holder;
-			$('.btn').click(function() {
-				console.log('clicked');
-			});
-			$(".clickPic").mouseenter(function() {
-					//$(this).css('border-color', 'blue')
-					console.log('over image');
-				});
-                
-//                ,
-//				function() {
-//					$(this).css('border-color', 'red')
-//				})
-//			$('p').mouseenter(function() {
-//				holder = $(this).html();
-//				console.log(holder);
-//				$(this).html('on top');
-//			})
-//			$('p').mouseleave(function() {
-//				$(this).html(holder);
-//			})
-
-		});
-	</script>
 </body>
 
 </html>
