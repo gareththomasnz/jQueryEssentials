@@ -1,0 +1,57 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div id="mybutton" class="btn btn-primary">click here for javascript</div>
+		<div id="mybutton2" class="btn btn-warning">click here for jquery</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h1 class='myclickbutton'>text title </h1>
+				<p>1 this is just some text</p>
+				<a href="http://www.google.com">go to google</a><img src="http://lorempixel.com/400/200" />
+				<p>2 this is just some text</p>
+			</div>
+			<div class="col-md-6">
+				<h1>Another title</h1>
+				<p>3 this is just some more text</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var holder;
+			$('.btn').on({
+				"click": wasClicked,
+				"mouseover": wasClicked
+			});
+
+			function wasClicked(event) {
+				console.log(event);
+			}
+		});
+	</script>
+
+</body>
+
+</html>
