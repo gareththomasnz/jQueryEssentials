@@ -37,13 +37,32 @@ $(document).ready(function() {
 		//		console.log($(this).attr('src'));
 		//	});
 		
-		$("#myInput").change(function(){
-			console.log($(this).val());
-			console.log($("#checkbx"));
-			console.log($("#checkbx").is(":checked"));
-			if($(this).val()=='yes'){$("#checkbx").prop("checked", true);}
-			else{$("#checkbx").prop("checked", false);}
-			});
+		//$("#myInput").change(function(){
+		//	console.log($(this).val());
+		//	console.log($("#checkbx"));
+		//	console.log($("#checkbx").is(":checked"));
+		//	if($(this).val()=='yes'){$("#checkbx").prop("checked", true);}
+		//	else{$("#checkbx").prop("checked", false);}
+		//	});
 	 
-	
+		//$('p').click(function(){
+		//       console.log($(this).text());
+		//       $(this).before('before the click');
+		//       $(this).after('after the click');
+		//       $(this).append('appended the click');
+		//       $(this).appendTo('#output');
+		//       $(this).prepend('prepend the click');
+		//       //$(this).replaceWith('Hello<BR>world');
+		//       });
+		//$('img').click(function(){
+		//       console.log($(this).text());
+		//       $(this).replaceWith('   what picture?   ');
+		//       });
+		
+		 console.log($(".container").contents());
+		 $("li").last().css("background-color", "#000000");
+		 $(".container").contents().find("div").css("background-color", "red ");
+		 $('#arrayme').click(function() {
+		 	console.log($(".one").children().toArray());
+		 });
 });
